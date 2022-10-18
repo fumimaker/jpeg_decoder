@@ -1,0 +1,104 @@
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_top_behav xil_defaultlib.sim_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_core.v" Line 32. Module jpeg_core doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_input.v" Line 32. Module jpeg_input doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_dht.v" Line 32. Module jpeg_dht_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_dht_std_y_dc.v" Line 31. Module jpeg_dht_std_y_dc doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_dht_std_y_ac.v" Line 31. Module jpeg_dht_std_y_ac doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_dht_std_cx_dc.v" Line 31. Module jpeg_dht_std_cx_dc doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_dht_std_cx_ac.v" Line 31. Module jpeg_dht_std_cx_ac doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct.v" Line 32. Module jpeg_idct doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_ram.v" Line 32. Module jpeg_idct_ram doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_ram_dp.v" Line 32. Module jpeg_idct_ram_dp doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_ram_dp.v" Line 32. Module jpeg_idct_ram_dp doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_ram_dp.v" Line 32. Module jpeg_idct_ram_dp doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_ram_dp.v" Line 32. Module jpeg_idct_ram_dp doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_x.v" Line 32. Module jpeg_idct_x doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_transpose.v" Line 32. Module jpeg_idct_transpose doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_transpose_ram.v" Line 32. Module jpeg_idct_transpose_ram doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_transpose_ram.v" Line 32. Module jpeg_idct_transpose_ram doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_transpose_ram.v" Line 32. Module jpeg_idct_transpose_ram doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_transpose_ram.v" Line 32. Module jpeg_idct_transpose_ram doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_y.v" Line 32. Module jpeg_idct_y doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_fifo.v" Line 32. Module jpeg_idct_fifo(WIDTH=32,DEPTH=8,ADDR_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_dqt.v" Line 32. Module jpeg_dqt doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_output.v" Line 32. Module jpeg_output doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_output_y_ram.v" Line 32. Module jpeg_output_y_ram doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_output_y_ram.v" Line 192. Module jpeg_output_y_ram_ram_dp_512_9 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_output_cx_ram.v" Line 32. Module jpeg_output_cx_ram doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_output_cx_ram.v" Line 488. Module jpeg_output_cx_ram_ram_dp_256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_output_cx_ram.v" Line 32. Module jpeg_output_cx_ram doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_output_cx_ram.v" Line 488. Module jpeg_output_cx_ram_ram_dp_256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_output_fifo.v" Line 32. Module jpeg_output_fifo(WIDTH=32,DEPTH=8,ADDR_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_bitbuffer.v" Line 32. Module jpeg_bitbuffer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_mcu_proc.v" Line 32. Module jpeg_mcu_proc doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_mcu_id.v" Line 32. Module jpeg_mcu_id doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_core.v" Line 32. Module jpeg_core doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_input.v" Line 32. Module jpeg_input doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_dht.v" Line 32. Module jpeg_dht_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_dht_std_y_dc.v" Line 31. Module jpeg_dht_std_y_dc doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_dht_std_y_ac.v" Line 31. Module jpeg_dht_std_y_ac doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_dht_std_cx_dc.v" Line 31. Module jpeg_dht_std_cx_dc doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_dht_std_cx_ac.v" Line 31. Module jpeg_dht_std_cx_ac doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct.v" Line 32. Module jpeg_idct doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_ram.v" Line 32. Module jpeg_idct_ram doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_ram_dp.v" Line 32. Module jpeg_idct_ram_dp doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_ram_dp.v" Line 32. Module jpeg_idct_ram_dp doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_ram_dp.v" Line 32. Module jpeg_idct_ram_dp doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_ram_dp.v" Line 32. Module jpeg_idct_ram_dp doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_x.v" Line 32. Module jpeg_idct_x doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_transpose.v" Line 32. Module jpeg_idct_transpose doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_transpose_ram.v" Line 32. Module jpeg_idct_transpose_ram doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_transpose_ram.v" Line 32. Module jpeg_idct_transpose_ram doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_transpose_ram.v" Line 32. Module jpeg_idct_transpose_ram doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_transpose_ram.v" Line 32. Module jpeg_idct_transpose_ram doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_y.v" Line 32. Module jpeg_idct_y doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_fifo.v" Line 32. Module jpeg_idct_fifo(WIDTH=32,DEPTH=8,ADDR_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_dqt.v" Line 32. Module jpeg_dqt doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_output.v" Line 32. Module jpeg_output doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_output_y_ram.v" Line 32. Module jpeg_output_y_ram doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_output_y_ram.v" Line 192. Module jpeg_output_y_ram_ram_dp_512_9 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_output_cx_ram.v" Line 32. Module jpeg_output_cx_ram doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_output_cx_ram.v" Line 488. Module jpeg_output_cx_ram_ram_dp_256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_output_cx_ram.v" Line 32. Module jpeg_output_cx_ram doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_output_cx_ram.v" Line 488. Module jpeg_output_cx_ram_ram_dp_256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_output_fifo.v" Line 32. Module jpeg_output_fifo(WIDTH=32,DEPTH=8,ADDR_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_bitbuffer.v" Line 32. Module jpeg_bitbuffer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_mcu_proc.v" Line 32. Module jpeg_mcu_proc doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Github/jpeg_decoder/jpeg_decoder/jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_mcu_id.v" Line 32. Module jpeg_mcu_id doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.jpeg_input
+Compiling module xil_defaultlib.jpeg_dht_std_y_dc
+Compiling module xil_defaultlib.jpeg_dht_std_y_ac
+Compiling module xil_defaultlib.jpeg_dht_std_cx_dc
+Compiling module xil_defaultlib.jpeg_dht_std_cx_ac
+Compiling module xil_defaultlib.jpeg_dht_default
+Compiling module xil_defaultlib.jpeg_idct_ram_dp
+Compiling module xil_defaultlib.jpeg_idct_ram
+Compiling module xil_defaultlib.jpeg_idct_x
+Compiling module xil_defaultlib.jpeg_idct_transpose_ram
+Compiling module xil_defaultlib.jpeg_idct_transpose
+Compiling module xil_defaultlib.jpeg_idct_y
+Compiling module xil_defaultlib.jpeg_idct_fifo(WIDTH=32,DEPTH=8,...
+Compiling module xil_defaultlib.jpeg_idct
+Compiling module xil_defaultlib.jpeg_dqt
+Compiling module xil_defaultlib.jpeg_output_y_ram_ram_dp_512_9
+Compiling module xil_defaultlib.jpeg_output_y_ram
+Compiling module xil_defaultlib.jpeg_output_cx_ram_ram_dp_256_8
+Compiling module xil_defaultlib.jpeg_output_cx_ram
+Compiling module xil_defaultlib.jpeg_output_fifo(WIDTH=32,DEPTH=...
+Compiling module xil_defaultlib.jpeg_output
+Compiling module xil_defaultlib.jpeg_bitbuffer
+Compiling module xil_defaultlib.jpeg_mcu_id
+Compiling module xil_defaultlib.jpeg_mcu_proc
+Compiling module xil_defaultlib.jpeg_core
+Compiling module xil_defaultlib.sim_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_top_behav

@@ -1,0 +1,12 @@
+Time resolution is 1 ps
+e0ffd8ff
+464a1000
+01004649
+01000001
+00000100
+4300dbff
+01010100
+02020101
+01010102
+02020101
+$finish called at time : 0 fs : File "C:/Github/jpeg_decoder/verilog_test/verilog_test.srcs/sim_1/imports/new/testcode.v" Line 41

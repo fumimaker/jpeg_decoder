@@ -1,0 +1,32 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_bitbuffer.v" \
+"../../../../jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_core.v" \
+"../../../../jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_dht.v" \
+"../../../../jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_dht_std_cx_ac.v" \
+"../../../../jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_dht_std_cx_dc.v" \
+"../../../../jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_dht_std_y_ac.v" \
+"../../../../jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_dht_std_y_dc.v" \
+"../../../../jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_dqt.v" \
+"../../../../jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct.v" \
+"../../../../jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_fifo.v" \
+"../../../../jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_ram.v" \
+"../../../../jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_ram_dp.v" \
+"../../../../jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_transpose.v" \
+"../../../../jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_transpose_ram.v" \
+"../../../../jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_x.v" \
+"../../../../jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_idct_y.v" \
+"../../../../jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_input.v" \
+"../../../../jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_mcu_id.v" \
+"../../../../jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_mcu_proc.v" \
+"../../../../jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_output.v" \
+"../../../../jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_output_cx_ram.v" \
+"../../../../jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_output_fifo.v" \
+"../../../../jpeg_decoder.srcs/sources_1/imports/src_v/jpeg_output_y_ram.v" \
+"../../../../jpeg_decoder.srcs/sim_1/new/sim_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
