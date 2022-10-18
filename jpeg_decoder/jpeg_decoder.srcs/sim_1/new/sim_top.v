@@ -21,7 +21,7 @@
 
 
 module sim_top();
-	parameter clk_period = 10; //1clk=10ns@100MHz
+	parameter clk_period = 2; //1clk=10ns@100MHz
 
 	reg [31:0] mem [0:128000]; //500KB memory
 	integer fd;
@@ -59,9 +59,15 @@ module sim_top();
 
     reg [31:0] cnt = 0;
     integer i = 0;
-    parameter datasize = (209053/4); //52263
+    parameter datasize = (2060/4); //52263
 
 	initial begin
+	   fd = $fopen("./outputraw.raw","w"); //jpeg file
+		if(fd==0)begin
+			$display("file not opened.\n");
+			$finish;
+		end
+		
 		$readmemh("0001.mem", mem);
 		for(i=0; i<10; i=i+1)begin
 			$display("%08x", mem[i]);
@@ -70,9 +76,7 @@ module sim_top();
 		rst_i <= 1;
 		#(clk_period*100); //wait 100clk
 		rst_i <= 0;
-		#(clk_period*100); //wait 100clk
-
-		for(i=0; i<datasize; i=i+1)begin
+		for(i=0; i<datasize-1; i=i+1)begin
 			inport_valid_i <= 1;
 			inport_data_i <= mem[i]; //32bit
 			inport_strb_i <= 4'b1111;
@@ -84,12 +88,16 @@ module sim_top();
 		end
 		inport_valid_i <= 1;
 		inport_data_i <= mem[i]; //32bit
-		inport_strb_i <= 4'b0001;
+		inport_strb_i <= 4'hF;
 		inport_last_i <= 1;
+		#(clk_period);
 		while(inport_accept_o==0)begin
 			#(clk_period);
 		end
-
+		inport_last_i <= 0;
+		inport_valid_i <= 0;
+        #(clk_period*10000);
+        $fclose(fd);
 		$finish;
 	end
 
@@ -98,17 +106,11 @@ module sim_top();
 	end
 
 	always @(posedge clk_i)begin
-		fd = $fopen("./outputraw.raw","w"); //jpeg file
-		if(fd==0)begin
-			$display("file not opened.\n");
-			$finish;
-		end
 		outport_accept_i <= 1;
 		if(outport_valid_o==1)begin
 			$fwrite(fd, "%c%c%c", outport_pixel_r_o, outport_pixel_g_o, outport_pixel_b_o);
 			$display("%h %h %h", outport_pixel_r_o, outport_pixel_g_o, outport_pixel_b_o);
 		end
-		$fclose(fd);
 	end
 
 endmodule
