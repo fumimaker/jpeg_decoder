@@ -67,7 +67,7 @@ module sim_top();
 			$display("file not opened.\n");
 			$finish;
 		end
-		
+
 		$readmemh("0001.mem", mem);
 		for(i=0; i<10; i=i+1)begin
 			$display("%08x", mem[i]);
@@ -108,7 +108,8 @@ module sim_top();
 	always @(posedge clk_i)begin
 		outport_accept_i <= 1;
 		if(outport_valid_o==1)begin
-			$fwrite(fd, "%c%c%c", outport_pixel_r_o, outport_pixel_g_o, outport_pixel_b_o);
+			$fwrite(fd, "%h %h %h %h %h\n", outport_pixel_x_o, outport_pixel_y_o, outport_pixel_r_o, outport_pixel_g_o, outport_pixel_b_o);
+
 			$display("%h %h %h", outport_pixel_r_o, outport_pixel_g_o, outport_pixel_b_o);
 		end
 	end
