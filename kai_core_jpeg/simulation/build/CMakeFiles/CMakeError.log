@@ -1,0 +1,72 @@
+Performing C++ SOURCE FILE Test _fbracket_depth_4096 failed with the following output:
+Change Dir: /mnt/c/Github/jpeg_decoder/kai_core_jpeg/simulation/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_18307/fast && make: Warning: File 'Makefile' has modification time 0.5 s in the future
+/usr/bin/make -f CMakeFiles/cmTC_18307.dir/build.make CMakeFiles/cmTC_18307.dir/build
+make[1]: Entering directory '/mnt/c/Github/jpeg_decoder/kai_core_jpeg/simulation/build/CMakeFiles/CMakeTmp'
+make[1]: Warning: File 'CMakeFiles/cmTC_18307.dir/flags.make' has modification time 0.49 s in the future
+Building CXX object CMakeFiles/cmTC_18307.dir/src.cxx.o
+/usr/bin/c++    -D_fbracket_depth_4096   -fbracket-depth=4096 -o CMakeFiles/cmTC_18307.dir/src.cxx.o -c /mnt/c/Github/jpeg_decoder/kai_core_jpeg/simulation/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-fbracket-depth=4096'
+make[1]: *** [CMakeFiles/cmTC_18307.dir/build.make:66: CMakeFiles/cmTC_18307.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/mnt/c/Github/jpeg_decoder/kai_core_jpeg/simulation/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_18307/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test _mno_cet failed with the following output:
+Change Dir: /mnt/c/Github/jpeg_decoder/kai_core_jpeg/simulation/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_127e3/fast && make: Warning: File 'Makefile' has modification time 0.5 s in the future
+/usr/bin/make -f CMakeFiles/cmTC_127e3.dir/build.make CMakeFiles/cmTC_127e3.dir/build
+make[1]: Entering directory '/mnt/c/Github/jpeg_decoder/kai_core_jpeg/simulation/build/CMakeFiles/CMakeTmp'
+make[1]: Warning: File 'CMakeFiles/cmTC_127e3.dir/flags.make' has modification time 0.49 s in the future
+Building CXX object CMakeFiles/cmTC_127e3.dir/src.cxx.o
+/usr/bin/c++    -D_mno_cet   -mno-cet -o CMakeFiles/cmTC_127e3.dir/src.cxx.o -c /mnt/c/Github/jpeg_decoder/kai_core_jpeg/simulation/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-mno-cet'; did you mean '-mno-aes'?
+make[1]: *** [CMakeFiles/cmTC_127e3.dir/build.make:66: CMakeFiles/cmTC_127e3.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/mnt/c/Github/jpeg_decoder/kai_core_jpeg/simulation/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_127e3/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test _Qunused_arguments failed with the following output:
+Change Dir: /mnt/c/Github/jpeg_decoder/kai_core_jpeg/simulation/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_29315/fast && make: Warning: File 'Makefile' has modification time 0.5 s in the future
+/usr/bin/make -f CMakeFiles/cmTC_29315.dir/build.make CMakeFiles/cmTC_29315.dir/build
+make[1]: Entering directory '/mnt/c/Github/jpeg_decoder/kai_core_jpeg/simulation/build/CMakeFiles/CMakeTmp'
+make[1]: Warning: File 'CMakeFiles/cmTC_29315.dir/flags.make' has modification time 0.49 s in the future
+Building CXX object CMakeFiles/cmTC_29315.dir/src.cxx.o
+/usr/bin/c++    -D_Qunused_arguments   -Qunused-arguments -o CMakeFiles/cmTC_29315.dir/src.cxx.o -c /mnt/c/Github/jpeg_decoder/kai_core_jpeg/simulation/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Qunused-arguments'
+make[1]: *** [CMakeFiles/cmTC_29315.dir/build.make:66: CMakeFiles/cmTC_29315.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/mnt/c/Github/jpeg_decoder/kai_core_jpeg/simulation/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_29315/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test _mt failed with the following output:
+Change Dir: /mnt/c/Github/jpeg_decoder/kai_core_jpeg/simulation/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5e4af/fast && make: Warning: File 'Makefile' has modification time 0.5 s in the future
+/usr/bin/make -f CMakeFiles/cmTC_5e4af.dir/build.make CMakeFiles/cmTC_5e4af.dir/build
+make[1]: Entering directory '/mnt/c/Github/jpeg_decoder/kai_core_jpeg/simulation/build/CMakeFiles/CMakeTmp'
+make[1]: Warning: File 'CMakeFiles/cmTC_5e4af.dir/flags.make' has modification time 0.49 s in the future
+Building CXX object CMakeFiles/cmTC_5e4af.dir/src.cxx.o
+/usr/bin/c++    -D_mt   -o CMakeFiles/cmTC_5e4af.dir/src.cxx.o -c /mnt/c/Github/jpeg_decoder/kai_core_jpeg/simulation/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_5e4af
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e4af.dir/link.txt --verbose=1
+/usr/bin/c++   -D_mt    CMakeFiles/cmTC_5e4af.dir/src.cxx.o  -o cmTC_5e4af  -mt 
+c++: error: unrecognized command line option ‘-mt’; did you mean ‘-t’?
+make[1]: *** [CMakeFiles/cmTC_5e4af.dir/build.make:87: cmTC_5e4af] Error 1
+make[1]: Leaving directory '/mnt/c/Github/jpeg_decoder/kai_core_jpeg/simulation/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_5e4af/fast] Error 2
+
+
+Source file was:
+int main() {return 0;}
+
