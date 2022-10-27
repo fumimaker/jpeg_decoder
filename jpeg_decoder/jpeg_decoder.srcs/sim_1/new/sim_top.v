@@ -59,7 +59,7 @@ module sim_top();
 
     reg [31:0] cnt = 0;
     integer i = 0;
-    parameter datasize = (2060/4); //52263
+    parameter datasize = 1000;//(2060/4); //52263
 
 	initial begin
 	   fd = $fopen("./outputraw.raw","w"); //jpeg file
@@ -109,7 +109,7 @@ module sim_top();
 		outport_accept_i <= 1;
 		if(outport_valid_o==1)begin
 			$fwrite(fd, "%h %h %h %h %h\n", outport_pixel_x_o, outport_pixel_y_o, outport_pixel_r_o, outport_pixel_g_o, outport_pixel_b_o);
-
+//            $fwrite(fd, "%h %h %h\n", outport_pixel_r_o, outport_pixel_g_o, outport_pixel_b_o);
 			$display("%h %h %h", outport_pixel_r_o, outport_pixel_g_o, outport_pixel_b_o);
 		end
 	end

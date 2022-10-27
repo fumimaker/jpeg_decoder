@@ -15,13 +15,13 @@
 // in touch!
 //-----------------------------------------------------------------
 // Copyright 2020 Ultra-Embedded.com
-// 
+//
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
-// 
+//
 //     http://www.apache.org/licenses/LICENSE-2.0
-// 
+//
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS IS" BASIS,
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -306,15 +306,16 @@ else
 always @ (posedge clk_i )
 if (rst_i)
     length_q <= 16'b0;
-else if (state_q == STATE_UXP_LENH || state_q == STATE_DQT_LENH || 
+else if (state_q == STATE_UXP_LENH || state_q == STATE_DQT_LENH ||
          state_q == STATE_DHT_LENH || state_q == STATE_IMG_LENH ||
          state_q == STATE_SOF_LENH)
     length_q <= {data_r, 8'b0};
 else if (state_q == STATE_UXP_LENL || state_q == STATE_DQT_LENL ||
          state_q == STATE_DHT_LENL || state_q == STATE_IMG_LENL ||
          state_q == STATE_SOF_LENL)
-    length_q <= {8'b0, data_r} - 16'd2;
-else if ((state_q == STATE_UXP_DATA || 
+    //length_q <= {8'b0, data_r} - 16'd2;
+    length_q <= {length_q[ 15 : 8 ], data_r} - 16'd2;
+else if ((state_q == STATE_UXP_DATA ||
           state_q == STATE_DQT_DATA ||
           state_q == STATE_DHT_DATA ||
           state_q == STATE_SOF_DATA ||
@@ -370,8 +371,8 @@ wire last_byte_w = (byte_idx_q == 2'd3) || inport_last_i;
 assign inport_accept_w =  (state_q == STATE_DQT_DATA && dqt_cfg_accept_i) ||
                           (state_q == STATE_DHT_DATA && dht_cfg_accept_i) ||
                           (state_q == STATE_IMG_DATA && (data_accept_i || token_pad_w)) ||
-                          (state_q != STATE_DQT_DATA && 
-                           state_q != STATE_DHT_DATA && 
+                          (state_q != STATE_DQT_DATA &&
+                           state_q != STATE_DHT_DATA &&
                            state_q != STATE_IMG_DATA);
 
 assign inport_accept_o = last_byte_w && inport_accept_w;
@@ -560,7 +561,7 @@ if (rst_i)
 else if (inport_valid_i & token_sos_w)
     start_q <= 1'b0;
 else if (state_q == STATE_IDLE && token_soi_w)
-    start_q <= 1'b1;    
+    start_q <= 1'b1;
 
 assign img_start_o = start_q;
 assign img_end_o   = eof_q | (inport_valid_i & token_eoi_w);
