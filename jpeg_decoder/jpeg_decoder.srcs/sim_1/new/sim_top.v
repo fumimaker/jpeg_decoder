@@ -59,7 +59,7 @@ module sim_top();
 
     reg [31:0] cnt = 0;
     integer i = 0;
-    parameter datasize = 1000;//(2060/4); //52263
+    parameter datasize = 1731;//(2060/4); //52263
 
 	initial begin
 	   fd = $fopen("./outputraw.raw","w"); //jpeg file

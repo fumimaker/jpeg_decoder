@@ -34,7 +34,7 @@ module jpeg_core
 // Params
 //-----------------------------------------------------------------
 #(
-     parameter SUPPORT_WRITABLE_DHT = 0
+     parameter SUPPORT_WRITABLE_DHT = 1
 )
 //-----------------------------------------------------------------
 // Ports
