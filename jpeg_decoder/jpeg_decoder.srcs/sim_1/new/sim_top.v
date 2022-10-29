@@ -61,7 +61,7 @@ module sim_top();
 		.idle_o(idle_o));
 
     reg [31:0] cnt = 0;
-    integer i = 0;
+    integer i = 0, j = 0;
     parameter datasize = 1731;//52263;//(2060/4); //52263
     parameter datasize2 = 1570;
     parameter datasize3 = 2999;
@@ -104,11 +104,24 @@ module sim_top();
 		#(clk_period*100); //wait 100clk
 		rst_i <= 0;
 		for(i=0; i<datasize; i=i+1)begin
+		  if(i==1000)begin
+			 for(j=0; j<1000; j=j+1)begin
+			     inport_valid_i <= 0;
+			     #(clk_period);
+                end
+			end
+			if(i==1200)begin
+			 for(j=0; j<1000; j=j+1)begin
+			     inport_valid_i <= 0;
+			     #(clk_period);
+                end
+			end
 			inport_valid_i <= 1;
 			inport_data_i <= mem[i]; //32bit
 			inport_strb_i <= 4'b1111;
 			inport_last_i <= 0;
 			#(clk_period);
+			
 			while(inport_accept_o==0)begin
 				#(clk_period);
 			end
