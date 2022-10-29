@@ -5,7 +5,6 @@
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
-preplace inst jpeg_core_0 -pg 1 -lvl 1 -x 170 -y 90 -defaultsOSRD
 levelinfo -pg 1 -20 170 360
 pagesize -pg 1 -db -bbox -sgen -20 -60 360 300
 "

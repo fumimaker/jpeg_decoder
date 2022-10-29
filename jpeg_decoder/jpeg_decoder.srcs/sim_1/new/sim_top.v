@@ -24,7 +24,10 @@ module sim_top();
 	parameter clk_period = 2; //1clk=10ns@100MHz
 
 	reg [31:0] mem [0:128000]; //500KB memory
-	integer fd;
+	reg [31:0] mem2 [0:128000]; //500KB memory
+	reg [31:0] mem3 [0:128000]; //500KB memory
+	integer fd, fd2, fd3;
+	integer frame = 0;
 
 	reg clk_i=1, rst_i;
 	reg inport_valid_i, inport_last_i, outport_accept_i;
@@ -59,24 +62,48 @@ module sim_top();
 
     reg [31:0] cnt = 0;
     integer i = 0;
-    parameter datasize = 1731;//(2060/4); //52263
+    parameter datasize = 1731;//52263;//(2060/4); //52263
+    parameter datasize2 = 1570;
+    parameter datasize3 = 2999;
 
 	initial begin
-	   fd = $fopen("./outputraw.raw","w"); //jpeg file
-		if(fd==0)begin
-			$display("file not opened.\n");
-			$finish;
-		end
+       fd = $fopen("./outputraw.raw","w"); //jpeg file
+        if(fd==0)begin
+            $display("file not opened.\n");
+            $finish;
+        end
+        
+        fd2 = $fopen("./outputraw2.raw","w"); //jpeg file
+        if(fd2==0)begin
+            $display("file2 not opened.\n");
+            $finish;
+        end
+        
+        fd3 = $fopen("./outputraw3.raw","w"); //jpeg file
+        if(fd3==0)begin
+            $display("file3 not opened.\n");
+            $finish;
+        end
 
 		$readmemh("0001.mem", mem);
 		for(i=0; i<10; i=i+1)begin
 			$display("%08x", mem[i]);
 		end
+		
+		$readmemh("0002.mem", mem2);
+		for(i=0; i<10; i=i+1)begin
+			$display("%08x", mem2[i]);
+		end
+		
+		$readmemh("0003.mem", mem3);
+		for(i=0; i<10; i=i+1)begin
+			$display("%08x", mem3[i]);
+		end
 
 		rst_i <= 1;
 		#(clk_period*100); //wait 100clk
 		rst_i <= 0;
-		for(i=0; i<datasize-1; i=i+1)begin
+		for(i=0; i<datasize; i=i+1)begin
 			inport_valid_i <= 1;
 			inport_data_i <= mem[i]; //32bit
 			inport_strb_i <= 4'b1111;
@@ -96,8 +123,58 @@ module sim_top();
 		end
 		inport_last_i <= 0;
 		inport_valid_i <= 0;
-        #(clk_period*10000);
+		
+		while(idle_o==0)begin
+		    #(clk_period);
+		end
+		
+		frame <= frame + 1;
+		
+		for(i=0; i<datasize2; i=i+1)begin
+			inport_valid_i <= 1;
+			inport_data_i <= mem2[i]; //32bit
+			inport_strb_i <= 4'b1111;
+			inport_last_i <= 0;
+			#(clk_period);
+			while(inport_accept_o==0)begin
+				#(clk_period);
+			end
+		end
+		inport_valid_i <= 1;
+		inport_data_i <= mem2[i]; //32bit
+		inport_strb_i <= 4'hF;
+		inport_last_i <= 1;
+		
+		while(idle_o==0)begin
+		    #(clk_period);
+		end
+		
+		frame <= frame + 1;
+		
+		for(i=0; i<datasize3; i=i+1)begin
+			inport_valid_i <= 1;
+			inport_data_i <= mem3[i]; //32bit
+			inport_strb_i <= 4'b1111;
+			inport_last_i <= 0;
+			#(clk_period);
+			while(inport_accept_o==0)begin
+				#(clk_period);
+			end
+		end
+		inport_valid_i <= 1;
+		inport_data_i <= mem3[i]; //32bit
+		inport_strb_i <= 4'hF;
+		inport_last_i <= 1;
+		
+		#(clk_period);		
+		
+		
         $fclose(fd);
+        $fclose(fd2);
+        $fclose(fd3);
+        while(idle_o==0)begin
+            #(clk_period);
+		end
 		$finish;
 	end
 
@@ -108,9 +185,19 @@ module sim_top();
 	always @(posedge clk_i)begin
 		outport_accept_i <= 1;
 		if(outport_valid_o==1)begin
+		  if(frame==0)begin
 			$fwrite(fd, "%h %h %h %h %h\n", outport_pixel_x_o, outport_pixel_y_o, outport_pixel_r_o, outport_pixel_g_o, outport_pixel_b_o);
 //            $fwrite(fd, "%h %h %h\n", outport_pixel_r_o, outport_pixel_g_o, outport_pixel_b_o);
 			$display("%h %h %h", outport_pixel_r_o, outport_pixel_g_o, outport_pixel_b_o);
+            end else if(frame==1)begin
+                $fwrite(fd2, "%h %h %h %h %h\n", outport_pixel_x_o, outport_pixel_y_o, outport_pixel_r_o, outport_pixel_g_o, outport_pixel_b_o);
+//              $fwrite(fd, "%h %h %h\n", outport_pixel_r_o, outport_pixel_g_o, outport_pixel_b_o);
+			     $display("%h %h %h", outport_pixel_r_o, outport_pixel_g_o, outport_pixel_b_o);
+            end else if(frame==2)begin
+                $fwrite(fd3, "%h %h %h %h %h\n", outport_pixel_x_o, outport_pixel_y_o, outport_pixel_r_o, outport_pixel_g_o, outport_pixel_b_o);
+//              $fwrite(fd, "%h %h %h\n", outport_pixel_r_o, outport_pixel_g_o, outport_pixel_b_o);
+			     $display("%h %h %h", outport_pixel_r_o, outport_pixel_g_o, outport_pixel_b_o);
+            end
 		end
 	end
 
