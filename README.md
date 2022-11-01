@@ -1,2 +1,3 @@
 # jpeg_decoder
 Low latency video transmission system project. Working in progress...
+Jpeg decoder is based on https://github.com/ultraembedded/core_jpeg
