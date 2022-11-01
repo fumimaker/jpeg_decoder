@@ -1,0 +1,327 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_1_wrapper -part xck26-sfvc784-2LV-c
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 46144
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1851.863 ; gain = 249.320
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.runs/synth_1/.Xil/Vivado-46044-fumi-ark/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (1#1) [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.runs/synth_1/.Xil/Vivado-46044-fumi-ark/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps8_0_axi_periph_0' [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/synth/design_1.v:324]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_QJIMLI' [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/synth/design_1.v:968]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_QJIMLI' (2#1) [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/synth/design_1.v:968]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1A7ZMW4' [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/synth/design_1.v:1100]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_0' [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.runs/synth_1/.Xil/Vivado-46044-fumi-ark/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_0' (3#1) [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.runs/synth_1/.Xil/Vivado-46044-fumi-ark/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.runs/synth_1/.Xil/Vivado-46044-fumi-ark/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (4#1) [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.runs/synth_1/.Xil/Vivado-46044-fumi-ark/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1A7ZMW4' (5#1) [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/synth/design_1.v:1100]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_KGUFR9' [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/synth/design_1.v:1510]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_1' [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.runs/synth_1/.Xil/Vivado-46044-fumi-ark/realtime/design_1_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_1' (6#1) [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.runs/synth_1/.Xil/Vivado-46044-fumi-ark/realtime/design_1_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.runs/synth_1/.Xil/Vivado-46044-fumi-ark/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (7#1) [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.runs/synth_1/.Xil/Vivado-46044-fumi-ark/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_KGUFR9' (8#1) [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/synth/design_1.v:1510]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.runs/synth_1/.Xil/Vivado-46044-fumi-ark/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (9#1) [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.runs/synth_1/.Xil/Vivado-46044-fumi-ark/realtime/design_1_xbar_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/synth/design_1.v:927]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/synth/design_1.v:927]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_0' has 40 connections declared, but only 38 given [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/synth/design_1.v:927]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps8_0_axi_periph_0' (10#1) [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/synth/design_1.v:324]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps8_0_99M_0' [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.runs/synth_1/.Xil/Vivado-46044-fumi-ark/realtime/design_1_rst_ps8_0_99M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps8_0_99M_0' (11#1) [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.runs/synth_1/.Xil/Vivado-46044-fumi-ark/realtime/design_1_rst_ps8_0_99M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/synth/design_1.v:235]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/synth/design_1.v:235]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/synth/design_1.v:235]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/synth/design_1.v:235]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_99M' of module 'design_1_rst_ps8_0_99M_0' has 10 connections declared, but only 6 given [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/synth/design_1.v:235]
+INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.runs/synth_1/.Xil/Vivado-46044-fumi-ark/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (12#1) [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.runs/synth_1/.Xil/Vivado-46044-fumi-ark/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'maxigp0_awuser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/synth/design_1.v:242]
+WARNING: [Synth 8-7071] port 'maxigp0_aruser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/synth/design_1.v:242]
+WARNING: [Synth 8-7071] port 'maxigp1_awuser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/synth/design_1.v:242]
+WARNING: [Synth 8-7071] port 'maxigp1_aruser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/synth/design_1.v:242]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'design_1_zynq_ultra_ps_e_0_0' has 83 connections declared, but only 79 given [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/synth/design_1.v:242]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (13#1) [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (14#1) [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-7129] Port M_ACLK in module s01_couplers_imp_KGUFR9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s01_couplers_imp_KGUFR9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1A7ZMW4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_1A7ZMW4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_QJIMLI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_QJIMLI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_QJIMLI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_QJIMLI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1915.090 ; gain = 312.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1933.000 ; gain = 330.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1933.000 ; gain = 330.457
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1933.000 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Parsing XDC File [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Finished Parsing XDC File [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Parsing XDC File [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/xbar'
+Parsing XDC File [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Finished Parsing XDC File [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Parsing XDC File [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/s01_couplers/auto_ds'
+Finished Parsing XDC File [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/s01_couplers/auto_ds'
+Parsing XDC File [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc'
+Finished Parsing XDC File [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc'
+Parsing XDC File [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0_in_context.xdc] for cell 'design_1_i/rst_ps8_0_99M'
+Finished Parsing XDC File [c:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0_in_context.xdc] for cell 'design_1_i/rst_ps8_0_99M'
+Parsing XDC File [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.srcs/constrs_1/imports/jpeg_decoder/Kria_K26_SOM_Rev1.xdc]
+WARNING: [Vivado 12-584] No ports matched 'pmod[2]'. [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.srcs/constrs_1/imports/jpeg_decoder/Kria_K26_SOM_Rev1.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'pmod[3]'. [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.srcs/constrs_1/imports/jpeg_decoder/Kria_K26_SOM_Rev1.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'pmod[4]'. [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.srcs/constrs_1/imports/jpeg_decoder/Kria_K26_SOM_Rev1.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'pmod[5]'. [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.srcs/constrs_1/imports/jpeg_decoder/Kria_K26_SOM_Rev1.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'pmod[6]'. [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.srcs/constrs_1/imports/jpeg_decoder/Kria_K26_SOM_Rev1.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'pmod[7]'. [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.srcs/constrs_1/imports/jpeg_decoder/Kria_K26_SOM_Rev1.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'fan_en_b'. [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.srcs/constrs_1/imports/jpeg_decoder/Kria_K26_SOM_Rev1.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'fan_en_b'. [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.srcs/constrs_1/imports/jpeg_decoder/Kria_K26_SOM_Rev1.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'fan_en_b'. [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.srcs/constrs_1/imports/jpeg_decoder/Kria_K26_SOM_Rev1.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'fan_en_b'. [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.srcs/constrs_1/imports/jpeg_decoder/Kria_K26_SOM_Rev1.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'iic_scl_io'. [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.srcs/constrs_1/imports/jpeg_decoder/Kria_K26_SOM_Rev1.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'iic_sda_io'. [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.srcs/constrs_1/imports/jpeg_decoder/Kria_K26_SOM_Rev1.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'iic_*'. [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.srcs/constrs_1/imports/jpeg_decoder/Kria_K26_SOM_Rev1.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'iic_*'. [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.srcs/constrs_1/imports/jpeg_decoder/Kria_K26_SOM_Rev1.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'iic_*'. [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.srcs/constrs_1/imports/jpeg_decoder/Kria_K26_SOM_Rev1.xdc:35]
+Finished Parsing XDC File [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.srcs/constrs_1/imports/jpeg_decoder/Kria_K26_SOM_Rev1.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.srcs/constrs_1/imports/jpeg_decoder/Kria_K26_SOM_Rev1.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.srcs/constrs_1/imports/jpeg_decoder/Kria_K26_SOM_Rev1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1971.410 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1971.410 ; gain = 0.000
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1971.410 ; gain = 368.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1971.410 ; gain = 368.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s01_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps8_0_99M. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1971.410 ; gain = 368.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1971.410 ; gain = 368.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1971.410 ; gain = 368.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2540.031 ; gain = 937.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2540.602 ; gain = 938.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2560.188 ; gain = 957.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2565.918 ; gain = 963.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2565.918 ; gain = 963.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2565.918 ; gain = 963.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2565.918 ; gain = 963.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2565.918 ; gain = 963.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2565.918 ; gain = 963.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------+----------+
+|      |BlackBox name                |Instances |
++------+-----------------------------+----------+
+|1     |design_1_xbar_0              |         1|
+|2     |design_1_auto_ds_0           |         1|
+|3     |design_1_auto_pc_0           |         1|
+|4     |design_1_auto_ds_1           |         1|
+|5     |design_1_auto_pc_1           |         1|
+|6     |design_1_axi_gpio_0_0        |         1|
+|7     |design_1_rst_ps8_0_99M_0     |         1|
+|8     |design_1_zynq_ultra_ps_e_0_0 |         1|
++------+-----------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------+------+
+|      |Cell                       |Count |
++------+---------------------------+------+
+|1     |design_1_auto_ds           |     2|
+|3     |design_1_auto_pc           |     2|
+|5     |design_1_axi_gpio_0        |     1|
+|6     |design_1_rst_ps8_0_99M     |     1|
+|7     |design_1_xbar              |     1|
+|8     |design_1_zynq_ultra_ps_e_0 |     1|
+|9     |OBUF                       |     2|
++------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2565.918 ; gain = 963.375
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 2565.918 ; gain = 924.965
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2565.918 ; gain = 963.375
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 2577.973 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2613.391 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 12e9067d
+INFO: [Common 17-83] Releasing license: Synthesis
+49 Infos, 52 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 2613.391 ; gain = 1166.973
+INFO: [Common 17-1381] The checkpoint 'C:/Github/jpeg_decoder/pre_test_tools/fpga_work_with_linux/fpga_work_with_linux.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  1 21:18:44 2022...

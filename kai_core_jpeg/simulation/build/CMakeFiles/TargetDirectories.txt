@@ -1,3 +1,0 @@
-/mnt/c/Github/jpeg_decoder/kai_core_jpeg/simulation/build/CMakeFiles/rebuild_cache.dir
-/mnt/c/Github/jpeg_decoder/kai_core_jpeg/simulation/build/CMakeFiles/edit_cache.dir
-/mnt/c/Github/jpeg_decoder/kai_core_jpeg/simulation/build/CMakeFiles/jpeg_decode.dir

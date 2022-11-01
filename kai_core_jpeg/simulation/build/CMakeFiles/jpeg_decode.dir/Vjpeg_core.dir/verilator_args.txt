@@ -1,1 +1,0 @@
-/usr/bin/verilator_bin;--compiler;gcc;--prefix;Vjpeg_core;--Mdir;/mnt/c/Github/jpeg_decoder/kai_core_jpeg/simulation/build/CMakeFiles/jpeg_decode.dir/Vjpeg_core.dir;--make;cmake;--trace;--cc;-y;../src_v;../src_v/jpeg_core.v
