@@ -70,15 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "design_1_axi_dma_0_1_synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_param power.BramSDPPropagationFix 1
 set_param chipscope.maxJobs 6
-set_param power.enableUnconnectedCarry8PinPower 1
-set_param power.enableCarry8RouteBelPower 1
-set_param power.enableLutRouteBelPower 1
-set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -101,7 +93,7 @@ set_property ip_output_repo c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_e
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_1/design_1_axi_dma_0_1.xci
+read_ip -quiet C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_1/design_1_axi_dma_0_1.xci
 set_property used_in_implementation false [get_files -all c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_1/design_1_axi_dma_0_1.xdc]
 set_property used_in_implementation false [get_files -all c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_1/design_1_axi_dma_0_1_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_1/design_1_axi_dma_0_1_ooc.xdc]

@@ -2,8 +2,8 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Wed Nov  2 21:26:31 2022
-# Process ID: 48252
+# Start of session at: Wed Nov  2 23:22:13 2022
+# Process ID: 86612
 # Current directory: C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/impl_1
 # Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
 # Log file: C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/impl_1/design_1_wrapper.vdi

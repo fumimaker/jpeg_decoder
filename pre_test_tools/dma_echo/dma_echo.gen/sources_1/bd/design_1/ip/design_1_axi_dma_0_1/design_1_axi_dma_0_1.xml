@@ -5104,7 +5104,7 @@ Note: This value must be greater than or equal to the largest expected packet to
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f39e1570</spirit:value>
+            <spirit:value>9:7d1a1072</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -5118,11 +5118,11 @@ Note: This value must be greater than or equal to the largest expected packet to
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Nov 02 11:45:20 UTC 2022</spirit:value>
+            <spirit:value>Wed Nov 02 14:20:02 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f39e1570</spirit:value>
+            <spirit:value>9:7d1a1072</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -5138,11 +5138,11 @@ Note: This value must be greater than or equal to the largest expected packet to
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Nov 02 11:45:20 UTC 2022</spirit:value>
+            <spirit:value>Wed Nov 02 14:20:02 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f39e1570</spirit:value>
+            <spirit:value>9:7d1a1072</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -5183,7 +5183,7 @@ Note: This value must be greater than or equal to the largest expected packet to
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:521b9b94</spirit:value>
+            <spirit:value>9:0ecd7e8c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -5199,11 +5199,11 @@ Note: This value must be greater than or equal to the largest expected packet to
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Nov 02 11:45:20 UTC 2022</spirit:value>
+            <spirit:value>Wed Nov 02 14:20:02 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:521b9b94</spirit:value>
+            <spirit:value>9:0ecd7e8c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -5217,11 +5217,11 @@ Note: This value must be greater than or equal to the largest expected packet to
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Nov 02 11:46:38 UTC 2022</spirit:value>
+            <spirit:value>Wed Nov 02 14:21:21 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f39e1570</spirit:value>
+            <spirit:value>9:7d1a1072</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -7830,7 +7830,7 @@ Note: This value must be greater than or equal to the largest expected packet to
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="INTEGER">
         <spirit:name>C_SG_LENGTH_WIDTH</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SG_LENGTH_WIDTH" spirit:minimum="8" spirit:maximum="26" spirit:rangeType="long">14</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SG_LENGTH_WIDTH" spirit:minimum="8" spirit:maximum="26" spirit:rangeType="long">16</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="INTEGER">
         <spirit:name>C_M_AXI_SG_ADDR_WIDTH</spirit:name>
@@ -8492,7 +8492,7 @@ Note: This value must be greater than or equal to the largest expected packet to
       <spirit:name>c_sg_length_width</spirit:name>
       <spirit:displayName>Length Width</spirit:displayName>
       <spirit:description>This is the number of valid bits in the buffer-length field of the Buffer Descriptor or the BTT register.</spirit:description>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.c_sg_length_width" spirit:order="1100" spirit:configGroups="1 NoDisplay" spirit:minimum="8" spirit:maximum="26" spirit:rangeType="long">14</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.c_sg_length_width" spirit:order="1100" spirit:configGroups="1 NoDisplay" spirit:minimum="8" spirit:maximum="26" spirit:rangeType="long">16</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -8985,6 +8985,7 @@ Note: This value must be greater than or equal to the largest expected packet to
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.c_s2mm_burst_size" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.c_s_axis_s2mm_tdata_width" xilinx:valueSource="user" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.c_sg_include_stscntrl_strm" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.c_sg_length_width" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.c_single_interface" xilinx:valuePermission="bd_and_user"/>
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>

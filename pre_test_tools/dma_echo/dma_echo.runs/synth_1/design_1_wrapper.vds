@@ -2,8 +2,8 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Wed Nov  2 21:25:44 2022
-# Process ID: 54120
+# Start of session at: Wed Nov  2 23:21:24 2022
+# Process ID: 66192
 # Current directory: C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/design_1_wrapper.vds
@@ -26,53 +26,53 @@ WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis b
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 45692
+INFO: [Synth 8-7075] Helper process launched with PID 82796
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1875.852 ; gain = 248.684
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1873.562 ; gain = 246.863
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_0_1' [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-54120-fumi-ark/realtime/design_1_axi_dma_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_0_1' (1#1) [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-54120-fumi-ark/realtime/design_1_axi_dma_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_0_1' [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-66192-fumi-ark/realtime/design_1_axi_dma_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_0_1' (1#1) [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-66192-fumi-ark/realtime/design_1_axi_dma_0_1_stub.v:6]
 WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'design_1_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:177]
 WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'design_1_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:177]
 WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'design_1_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:177]
 WARNING: [Synth 8-7071] port 's2mm_introut' of module 'design_1_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:177]
 WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'design_1_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:177]
 WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'design_1_axi_dma_0_1' has 64 connections declared, but only 59 given [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:177]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_0' [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-54120-fumi-ark/realtime/design_1_axi_smc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_0' (2#1) [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-54120-fumi-ark/realtime/design_1_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_0' [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-66192-fumi-ark/realtime/design_1_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_0' (2#1) [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-66192-fumi-ark/realtime/design_1_axi_smc_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'design_1_ps8_0_axi_periph_0' [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:532]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_QJIMLI' [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:1168]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_QJIMLI' (3#1) [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:1168]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1A7ZMW4' [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:1293]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_0' [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-54120-fumi-ark/realtime/design_1_auto_ds_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_0' (4#1) [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-54120-fumi-ark/realtime/design_1_auto_ds_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-54120-fumi-ark/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (5#1) [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-54120-fumi-ark/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_0' [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-66192-fumi-ark/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_0' (4#1) [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-66192-fumi-ark/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-66192-fumi-ark/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (5#1) [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-66192-fumi-ark/realtime/design_1_auto_pc_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1A7ZMW4' (6#1) [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:1293]
 INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_KGUFR9' [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:1703]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_1' [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-54120-fumi-ark/realtime/design_1_auto_ds_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_1' (7#1) [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-54120-fumi-ark/realtime/design_1_auto_ds_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-54120-fumi-ark/realtime/design_1_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (8#1) [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-54120-fumi-ark/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_1' [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-66192-fumi-ark/realtime/design_1_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_1' (7#1) [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-66192-fumi-ark/realtime/design_1_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-66192-fumi-ark/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (8#1) [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-66192-fumi-ark/realtime/design_1_auto_pc_1_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_KGUFR9' (9#1) [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:1703]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-54120-fumi-ark/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (10#1) [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-54120-fumi-ark/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-66192-fumi-ark/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (10#1) [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-66192-fumi-ark/realtime/design_1_xbar_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:1128]
 WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:1128]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:1128]
 WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_0' has 40 connections declared, but only 37 given [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:1128]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_ps8_0_axi_periph_0' (11#1) [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:532]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps8_0_99M_0' [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-54120-fumi-ark/realtime/design_1_rst_ps8_0_99M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps8_0_99M_0' (12#1) [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-54120-fumi-ark/realtime/design_1_rst_ps8_0_99M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps8_0_99M_0' [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-66192-fumi-ark/realtime/design_1_rst_ps8_0_99M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps8_0_99M_0' (12#1) [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-66192-fumi-ark/realtime/design_1_rst_ps8_0_99M_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:405]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:405]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:405]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:405]
 WARNING: [Synth 8-7023] instance 'rst_ps8_0_99M' of module 'design_1_rst_ps8_0_99M_0' has 10 connections declared, but only 6 given [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:405]
-INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-54120-fumi-ark/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (13#1) [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-54120-fumi-ark/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-66192-fumi-ark/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (13#1) [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/.Xil/Vivado-66192-fumi-ark/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'maxigp0_awuser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:412]
 WARNING: [Synth 8-7071] port 'maxigp0_aruser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:412]
 WARNING: [Synth 8-7071] port 'maxigp1_awuser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.gen/sources_1/bd/design_1/synth/design_1.v:412]
@@ -97,18 +97,18 @@ WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_ps8_0_axi_periph_0 i
 WARNING: [Synth 8-7129] Port S01_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S01_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1941.668 ; gain = 314.500
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1940.809 ; gain = 314.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1959.582 ; gain = 332.414
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1958.727 ; gain = 332.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1959.582 ; gain = 332.414
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1958.727 ; gain = 332.027
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1959.582 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1958.727 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -135,15 +135,15 @@ Parsing XDC File [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/s
 Finished Parsing XDC File [C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1990.008 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1989.172 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1990.008 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1989.172 ; gain = 0.000
 WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1990.008 ; gain = 362.840
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1989.172 ; gain = 362.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -151,7 +151,7 @@ Start Loading Part and Timing Information
 Loading part: xck26-sfvc784-2LV-c
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1990.008 ; gain = 362.840
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1989.172 ; gain = 362.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -168,10 +168,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph. (con
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps8_0_99M. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1990.008 ; gain = 362.840
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1989.172 ; gain = 362.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1990.008 ; gain = 362.840
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1989.172 ; gain = 362.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -200,25 +200,25 @@ WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_ps8_0_axi_periph_0 i
 WARNING: [Synth 8-7129] Port S01_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S01_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1990.008 ; gain = 362.840
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1989.172 ; gain = 362.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2562.945 ; gain = 935.777
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2564.223 ; gain = 937.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2562.945 ; gain = 935.777
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2564.223 ; gain = 937.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2582.996 ; gain = 955.828
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2584.270 ; gain = 957.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -236,37 +236,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2589.832 ; gain = 962.664
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2590.035 ; gain = 963.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2589.832 ; gain = 962.664
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2590.035 ; gain = 963.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2589.832 ; gain = 962.664
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2590.035 ; gain = 963.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2589.832 ; gain = 962.664
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2590.035 ; gain = 963.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2589.832 ; gain = 962.664
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2590.035 ; gain = 963.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2589.832 ; gain = 962.664
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2590.035 ; gain = 963.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -300,16 +300,16 @@ Report Cell Usage:
 |9     |design_1_zynq_ultra_ps_e_0 |     1|
 +------+---------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2589.832 ; gain = 962.664
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2590.035 ; gain = 963.336
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 2589.832 ; gain = 932.238
-Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2589.832 ; gain = 962.664
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 2590.035 ; gain = 932.891
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2590.035 ; gain = 963.336
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 2589.832 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 2590.035 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2636.211 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2637.957 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -317,7 +317,7 @@ Synth Design complete, checksum: b48abcb
 INFO: [Common 17-83] Releasing license: Synthesis
 50 Infos, 45 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2641.211 ; gain = 1193.969
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2642.977 ; gain = 1197.480
 INFO: [Common 17-1381] The checkpoint 'C:/Github/jpeg_decoder/pre_test_tools/dma_echo/dma_echo.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Nov  2 21:26:23 2022...
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  2 23:22:05 2022...
